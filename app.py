@@ -37,7 +37,7 @@ SOFT_SKILLS = [
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('postings.csv')
+    df = pd.read_csv('postings_small.csv')
     return df
 
 @st.cache_data
@@ -274,4 +274,5 @@ elif page == "Skills Gap Analysis":
 
 # Footer
 st.sidebar.markdown("---")
+
 st.sidebar.markdown("**Disclaimer:** For educational purposes only.")
